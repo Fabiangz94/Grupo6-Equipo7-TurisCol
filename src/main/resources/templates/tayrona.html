@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TurisCol - TAYRONA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a th:href="@{/}">TurisCol</a></h1>     <!-- === parte izquierda === -->
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a th:href="@{/#portfolio}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Regiones</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style=" font-weight: bold;">PARQUE NACIONAL NATURAL TAYRONA</h2>
+          <ol>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/#portfolio}">Región Caribe.</a></li>
+            <li>Regiones de Colombia.</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tayrona/tayrona.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tayrona/tayrona1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tayrona/tayrona2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tayrona/tayrona3.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="quehacer">
+              <h2>Que hacer?</h2>
+              <ul><p>Para quienes buscan experiencias ecoturísticas nuevas y asombrosas el PNN Tayrona es un lugar lleno de mitos y leyendas de las antiguas comunidades que habitaron la Sierra Nevada de Santa Marta. Allí encontraras vestigios arqueológicos de su arquitectura eterna y puedes llegar después de una caminata por un recorrido mágico entre la naturaleza exuberante. Para quienes buscan la contemplación y el descanso, el Parque ofrece magníficas playas y el relajante panorama de un mar intensamente azul. Quienes se sienten atraídos por actividades más emocionantes podrán disfrutar de buceo a pulmón en Playa del Muerto “Playa Cristal”, Granate y la Piscina Natural Tayrona. En Isla Aguja y Granate se puede practicar el buceo autónomo y se pueden hacer caminatas, con posibilidad de observación de aves, pequeños y medianos mamíferos o simplemente disfrutar de la belleza escénica, en Cañaveral y Arrecifes. Las actividad ecoturísticas también se puede realizar en el sector de Bahía Concha en las Playas Waikiki y Bonito Gordo, tomando transporte de lancha desde la playa principal de Bahía Concha.</p></ul>
+            </div>
+
+            <div class="quehacer">
+              <h2>Recomendaciones especiales:</h2>
+              <ul><p>Verifique cada uno de los horarios relacionados en la tabla de horarios de ingreso, debido a que cada sector o punto de ingreso al Parque Natural Tayrona maneja un horario distinto.</p></ul>
+              <ul><p>Haga sus reservas con antelación. La capacidad de carga diaria del Parque es de 6.900 turistas.</p></ul>
+              <ul><p>Los visitantes deberán adquirir una póliza contra todo riesgo para el ingreso y permanencia en el área protegida. Consulte con la aseguradora los puntos de asistencia en el área.</p></ul>
+              <ul><p>Si va a contratar un guía, asegúrese de que esté certificado para tal actividad.</p></ul>
+              <ul><p>El ingreso de bolsas plásticas y objetos de Icopor está restringido.</p></ul>
+              <ul><p>El ingreso de elementos musicales está restringido.</p></ul>
+              <ul><p>El ingreso de mascotas está restringido.</p></ul>
+              <ul><p>Al salir del área protegida debe retirar la basura que produjo durante su estadía (eso incluye cáscaras, semillas u otros productos residuales de origen vegetal o animal); no acatar esta medida deteriora el paisaje y puede producir enfermedades para la fauna y flora silvestres.</p></ul>
+              <ul><p>El parqueo de vehículos en zonas de camping está prohibido. Cuando los parqueaderos habilitados estén copados, no se permitirá el ingreso de carros, únicamente de visitantes.</p></ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>REGIÓN CARIBE</h3>
+              <ul>
+                <li><strong>Nombre:</strong> Parque nacional natural Tayrona</li>
+                <li><strong>Ubicación:</strong> Se encuentra ubicado en las estribaciones de la Sierra Nevada de Santa Marta en el Caribe de Colombia. Su superficie hace parte de la ciudad de Santa Marta.</li>
+                <li><strong>Departamento:</strong> Magdalena</li>
+                <li><strong>Tipo:</strong> Parque Nacional Natural.</li>
+                <li><strong>Superficie:</strong> 225 km²</li>
+                <li><strong>Clima:</strong> Tropical húmedo (Temperatura entre 25 y 38 °C).</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Detalles: </h2>
+              <p>
+                Las estribaciones de la Sierra Nevada de Santa Marta, la montaña costera más alta del mundo, se hunden en el mar como los dedos de una mano gigantesca entre los que se forman bahías y ensenadas de belleza singular: Chengue, Gayraca, Cinto, Neguanje, Concha, Guachaquita, con sus playas de arenas blancas delimitadas por, manglares, matorrales o bosques, y bañadas todas por las aguas cristalinas del mar Caribe, hacen parte de los muchos atractivos que ofrece el Parque Nacional Natural Tayrona. Para quienes buscan la contemplación y el descanso, el Parque ofrece magníficas playas y el relajante panorama de un mar intensamente azul. Quienes se sienten atraídos por actividades más emocionantes podrán disfrutar de caminatas, careteo y buceo autónomo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Ubicación: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501327.6979269874!2d-74.54366134822519!3d10.991829682443829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef48b22eaf45f4d%3A0x485723dccbdb882f!2sParque%20Nacional%20Natural%20Tayrona!5e0!3m2!1ses-419!2sco!4v1664208487157!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

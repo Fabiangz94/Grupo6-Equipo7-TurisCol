@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TurisCol - TINIJE</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a th:href="@{/}">TurisCol</a></h1>     <!-- === parte izquierda === -->
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a th:href="@{/#portfolio}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Regiones</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style=" font-weight: bold;">LAGUNA EL TINIJE</h2>
+          <ol>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/#portfolio}">Región Orinoquía.</a></li>
+            <li>Regiones de Colombia.</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tinije/tinije.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tinije/tinije1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/tinije/tinije2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="quehacer">
+              <h2>Que hacer?</h2>
+              <ul><p>Este espacio se presta para realizar deportes acuáticos como pesca deportiva y canojate. El mejor plan en la Laguna del Tinije es hacer un recorrido detallado a través de las 128 hectáreas que ocupa. En épocas secas se puede realizar senderismo y sus aguas son refugio para las muchas especies de fauna que van a buscar hidratarse o descansar. En épocas de lluvias, la laguna acoge a especies acuáticas que se reproducen en sus aguas, por eso, es importante conservar esta laguna.</p></ul>
+              <ul><p>El paisaje que presenta la Laguna de Tinije es un paisaje típico de los llanos colombianos, el sol asomándose en medio de montañas verdes rodeadas de flora, este escenario lo dejará sin aliento y le incentivará la curiosidad de conocer mucho más de la región de la Orinoquia.</p></ul>
+              <ul><p>Respecto a la fauna y flora en la Laguna de Tinije encontrará venados, caimanes llaneros y morrocoys.</p></ul>
+            </div>
+
+            <div class="quehacer">
+              <h2>Recomendaciones especiales:</h2>
+              <ul><p>En su viaje a la Laguna del Tinije se recomienda consultar a las fincas y propietarios cercanos con anticipación si es posible entrar al lugar, ya que los locales se han puesto en la tarea de proteger la reserva de toda amenaza, por lo que las entradas a la laguna suelen estar bloqueadas.</p></ul>
+              <ul><p>En las cercanías de la laguna no se encuentran restaurantes u hoteles, se recomienda planear la visita para un solo día y empezar el viaje temprano. Cuente con comida y bebidas suficientes para el día.</p></ul>
+              <ul><p>No dejar basura en el lugar, no contamine sus aguas, no tome ninguna planta o animal del ecosistema de la Laguna del Tinije, respete y cuide este espacio natural de importancia ambiental.</p></ul>
+              <ul><p></p></ul>
+              <ul><p></p></ul>
+              <ul><p></p></ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>REGIÓN DE LA ORINOQUÍA </h3>
+              <ul>
+                <li><strong>Nombre:</strong>Laguna el Tinije.</li>
+                <li><strong>Ubicación:</strong> Ubicada a 2 horas de Aguazul, Casanare, para llegar a la Laguna de Tinje debe tomar la vía que conduce a Maní.</li>
+                <li><strong>Departamento:</strong> Casanare.</li>
+                <li><strong>Tipo:</strong> Laguna</li>
+                <li><strong>Superficie:</strong>  3 km de ancho y 400 metros de largo.</li>
+                <li><strong>Clima:</strong> Húmedo (Temperatura promedio 23 °C).</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Detalles: </h2>
+              <p>
+                La Laguna del Tinije es un ecosistema único dentro de la sabana, sirve como zona de reserva de agua para veredas de los municipios Aguazul y Maní; es refugio de flora y fauna y zona de contención para evitar inundaciones. La Laguna hace parte de la cuenca del río Cusiana, el cuál desemboca en el río Meta, que posteriormente entra en el río Orinoco. La cuenca del Orinoco es una cuenca compartida entre Colombia y Venezuela.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Ubicación: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127209.37087376237!2d-72.47698240933602!3d4.890555272738691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6b3416c3f50d77%3A0x2cbebe6b3fdccb8d!2sLaguna%20Tinije!5e0!3m2!1ses-419!2sco!4v1664320839726!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

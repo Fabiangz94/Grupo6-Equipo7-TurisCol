@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TurisCol - Victoria Regia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a th:href="@{/}">TurisCol</a></h1>     <!-- === parte izquierda === -->
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a th:href="@{/#portfolio}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Regiones</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style=" font-weight: bold;">RESERVA NATURAL VICTORIA REGIA</h2>
+          <ol>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/#portfolio}">Región Amazónica.</a></li>
+            <li>Regiones de Colombia.</li>
+          </ol>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Victoria/victoria.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Victoria/victoria1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Victoria/victoria2.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="quehacer">
+              <h2>Que hacer?</h2>
+              <ul><p>La reserva natural Victoria Regia, a la que los viajeros pueden llegar desde Leticia luego de un viaje de quince minutos en lancha, permite admirar el loto más grande del Amazonas. Hacer el recorrido por este lugar se facilita gracias a que sobre los lagos donde reposan estas enormes plantas, las Victorias regias, se han instalado puentes a poca distancia del agua, lo que hace posible verlas con detalle.</p></ul>
+              <ul><p>En el lugar se pueden observar muchas especies de animales, pero sobresalen las guacamayas y los monos bebeleches!!!</p></ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>REGIÓN AMAZÓNICA</h3>
+              <ul>
+                <li><strong>Nombre:</strong> Reserva Natural Victoria Regia.</li>
+                <li><strong>Ubicación:</strong> Leticia.</li>
+                <li><strong>Departamento:</strong> Amazonas.</li>
+                <li><strong>Tipo:</strong> Reserva natural regional.</li>
+                <li><strong>Clima:</strong> Tropical Húmedo (26°C)</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Detalles: </h2>
+              <p>
+                La reserva natural Victoria amazonica, también llamada Victoria regia, es un nenúfar o lirio de agua; es el más grande de todos los lirios de agua, nativo de las aguas poco profundas del río Amazonas, se encuentra en el  municipio de Leticia departamento del amazonas, posee este nombre ya que allí se encuentra el lirio o nenúfar de agua más grande de todos los lirios del agua, nativo de las aguas poco profundas del río Amazonas, los viajeros pueden llegar desde Leticia luego de un viaje de quince minutos en lancha, permite admirar el loto más grande del Amazonas. Hacer el recorrido por este lugar se facilita gracias a que sobre los lagos donde reposan estas enormes plantas, las Victorias regias, se han instalado puentes a poca distancia del agua, lo que hace posible verlas con detalle.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 20px;">Ubicación: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.1951192270794!2d-69.97884228523952!3d-4.18201109695956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91f2f4383a4cb293%3A0x68ad4f5659d04a45!2sJardin%20Victoria%20Regia!5e0!3m2!1ses-419!2sco!4v1663728541747!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

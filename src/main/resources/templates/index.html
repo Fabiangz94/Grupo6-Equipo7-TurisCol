@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TurisCol - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.8.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a th:href="@{/}">TurisCol</a></h1>     <!-- === parte izquierda === -->
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bi bi-people"></i> <span>¿Quiénes somos?</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Regiones</span></a></li>
+          <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Testimonios</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contactanos</span></a></li>
+          <li><a th:href="@{login}" class="nav-link scrollto"><i class="bi bi-person-circle"></i> <span>Iniciar Sesión</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="carousel slide" data-bs-ride="carousel">
+             <!---------------------------------------------------------------------- CAROUSEL --------------------------------------------------->
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="4"></button>
+              </div>
+              
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" >
+                  <div class="slide1"><p><span class="typed" data-typed-items="Turismo por Colombia."></span></p>  </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide2"><p><span class="typed" data-typed-items="Turismo por Colombia."></span></p>   </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide3"><p><span class="typed" data-typed-items="Turismo por Colombia."></span></p> </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide4"><p><span class="typed" data-typed-items="El país más acogedor del mundo."></span></p>  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide5"><p><span class="typed" data-typed-items="El país de la alegría."></span></p>  </div>
+                </div>
+              </div>
+              
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            
+            
+            <!---------------------------------------------------------------------- FIN CAROUSEL --------------------------------------------------->
+
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>¿QUIÉNES SOMOS?</h2>
+          <p>No somos una agencia de Turismo, queremos ser tu aliado y contar la historia de un país que busca demostrarle al mundo la hermosura de sus paisajes y de su gente. Nuestro objetivo es cerrar la brecha entre las percepciones negativas que tienen en el mundo acerca de Colombia y las realidades del país a través del potencial de sus recursos y del valor de su gente.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Una nación con innumerables atributos como Colombia tenía que contar con un aliado que potenciara su valor ante el mundo.</h3>
+            <p class="fst-italic">
+              Nos centramos en promover el orgullo nacional en cada colombiano, y de celebrar, con nuestros compatriotas y con el mundo entero, todos los hechos que enaltecen al país.
+            </p>
+            <div class="row">
+              <video src="assets/video/videoAbout.mp4" autoplay="true" muted="true" loop="true"></video>
+            </div>
+            <p>
+              Colombia pasa hoy por un buen momento y es hora de contárselo a todos. Durante la última década el país ha venido construyendo un mejor territorio para quienes lo habitan y para quienes quieren vivir la magia de Colombia, en esta pagina encontraras los mayores sitios turísticos de Colombia por Regiones, queremos destacar la belleza de cada Región, y darte las mejores recomendaciones para que tengas el mejor viaje.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Regiones de Colombia</h2>
+          <p>El Caribe, el Pacífico, la Orinoquía, la Amazonía, la zona Andina e Insular son las seis regiones naturales de Colombia, cada una con sus propia belleza, características, costumbres, gastronomía y música. Cada una es un mundo distinto dentro de un mismo país.
+            <br>
+            A continuación podrás conocer los mejores lugares turísticos de cada región de Colombia.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".reg-andina">Región Andina</li>
+              <li data-filter=".reg-amazonica">Región Amazónica</li>
+              <li data-filter=".reg-paficio">Región Pacífico</li>
+              <li data-filter=".reg-caribe">Región Caribe</li>
+              <li data-filter=".reg-orinoquia">Región de la Orinoquía</li>
+              <li data-filter=".reg-insular">Región Insular</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <!--REGION ANDINA-->
+          <div class="col-lg-4 col-md-6 portfolio-item reg-andina">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LA PIEDRA DEL PEÑOL - GUATAPÉ - REGIÓN ANDINA."><i class="bx bx-plus"></i></a>
+                <a th:href="@{/guatape}" href="peñol-guatape.html" title="Detalles"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-andina">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CATEDRAL DE SAL - ZIPAQUIRA - REGIÓN ANDINA."><i class="bx bx-plus"></i></a>
+                <a th:href="@{catedral}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-andina">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LAGUNA DE TOTA - BOYACÁ - REGIÓN ANDINA."><i class="bx bx-plus"></i></a>
+                <a th:href="@{tota}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-andina">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-10.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="DESIERTO DE LA TATACOA - HUILA - REGIÓN ANDINA."><i class="bx bx-plus"></i></a>
+                <a th:href="@{tatacoa}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-andina">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-11.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-11.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PARQUE NACIONAL NATURAL EL COCUY - BOYACÁ - REGIÓN ANDINA."><i class="bx bx-plus"></i></a>
+                <a th:href="@{cocuy}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--REGION PACIFICO -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-paficio">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="BAHIA SOLANO - CHOCÓ - REGIÓN PACIFICO"><i class="bx bx-plus"></i></a>
+                <a th:href="@{solano}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-paficio">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NUQUÍ - CHOCÓ - REGIÓN PACIFICO"><i class="bx bx-plus"></i></a>
+                <a th:href="@{nuqui}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-paficio">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-20.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-20.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LAGUNA VERDE – NARIÑO - REGIÓN PACIFICO"><i class="bx bx-plus"></i></a>
+                <a th:href="@{lagunaver}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--REGION AMAZONICA -->
+          <div class="col-lg-4 col-md-6 portfolio-item reg-amazonica">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CERROS DE MAVECURE – GUAINÍA - REGIÓN AMAZONIA"><i class="bx bx-plus"></i></a>
+                <a  th:href="@{mavecure}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-amazonica">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="RESERVA NATURAL VICTORIA REGIA – LETICIA - REGIÓN AMAZONIA"><i class="bx bx-plus"></i></a>
+                <a th:href="@{victoria}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-amazonica">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SERRANÍA DE CHIRIBIQUETE – GUAVIARE - REGIÓN AMAZONIA"><i class="bx bx-plus"></i></a>
+                <a th:href="@{Chiribiquete}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--REGION CARIBE -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-caribe">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-13.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-13.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PARQUE NACIONAL NATURAL TAYRONA – SANTA MARTA - REGIÓN CARIBE"><i class="bx bx-plus"></i></a>
+                <a th:href="@{tayrona}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-caribe">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-14.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-14.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PALOMINO - LA GUAJIRA - REGIÓN CARIBE"><i class="bx bx-plus"></i></a>
+                <a th:href="@{palomino}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-caribe">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-15.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-15.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ISLA DEL ROSARIO - BOLIVAR - REGIÓN CARIBE"><i class="bx bx-plus"></i></a>
+                <a th:href="@{rosario}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--REGION ORINOQUIA -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-orinoquia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-17.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-17.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CAÑO CRISTALES, EL RÍO DE LOS 7 COLORES - REGIÓN ORINOQUIA"><i class="bx bx-plus"></i></a>
+                <a th:href="@{cristales}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-orinoquia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-18.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-18.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PARQUE NACIONAL NATURAL EL TUPARRO - REGIÓN ORINOQUIA"><i class="bx bx-plus"></i></a>
+                <a th:href="@{tuparro}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-orinoquia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-19.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-19.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LAGUNA EL TINIJE – CASANARE - REGIÓN ORINOQUIA"><i class="bx bx-plus"></i></a>
+                <a th:href="@{tinije}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!--REGION INSULAR -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-insular">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-12.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-12.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ISLAS DE SAN ANDRES - REGIÓN INSULAR"><i class="bx bx-plus"></i></a>
+                <a th:href="@{andres}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-insular">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ISLA DE GORGONA – VALLE DEL CAUCA – REGIÓN INSULAR"><i class="bx bx-plus"></i></a>
+                <a th:href="@{gorgona}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item reg-insular">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-16.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-16.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ISLA DE MALPELO – VALLE DEL CAUCA – REGIÓN INSULAR"><i class="bx bx-plus"></i></a>
+                <a th:href="@{malpelo}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonios.</h2>
+          <p>Las mejores experiencias se viven en el país más acogedor del mundo.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Viajar por Colombia es compartir con una infinidad de culturas y descubrir paisajes inimaginables, solo Colombia es capaz de reunir a varias comunidades, culturas, contrastes y combinar paisajes opuestos como la nieve y el mar en un mismo lugar. Que país tan hermoso!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+                <h3>Jorge</h3>
+                <h4>Pereira.</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Me ha encantado mi viaje a Colombia! Fué emocionante!!!!!!!!!!!!! <br> Y gracias a TurisCol pude disfrutar de los mejores lugares. Fue de gran ayuda.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img" alt="">
+                <h3>Carolina Rodriguez</h3>
+                <h4>Bogotá.</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Si viajas a Colombia es obligatorio conocer la hermosa playa del Tayrona. La mejor. Playas cristalinas, bien organizada, muy recomendada.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.png" class="testimonial-img" alt="">
+                <h3>Fabian Gonzalez</h3>
+                <h4>Boyacá</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  He ido dos veces a Colombia y volvería siempre que pueda. No encuentro otro lugar ideal, empezando por el viaje tan hermoso para llegar hasta ahí, el lugar, la atención, la comida...todo… Y esta pagina es la mejor para saber que hacer en Colombia.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.png" class="testimonial-img" alt="">
+                <h3>Emma Schmid</h3>
+                <h4>Suiza</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Soñaba con conocer el Amazonas y la realidad superó mi sueño. Todas las personas con las que me encontré, encantadoras, aprendí mucho sobre la selva, los animales y el río. Los paisajes son impresionantes y los sonidos maravillosos... hay que vivirlo... Me sentí cuidada y atendida. Recomendable 100%.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.png" class="testimonial-img" alt="">
+                <h3>Alex</h3>
+                <h4>Hulia</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="facts">
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Clientes Felices</strong></p> <p style="text-align: justify;">Consideras que nuestros servicios han excedido tus expectativas.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext"></i>
+                <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Pendientes por verificar.</strong></p> <p style="text-align: justify;">Sitios turísticos añadidos por nuestros usuarios que están en proceso de certificación.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="count-box">
+                <i class="bi bi-people"></i>
+                <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Sitios Turísticos.</strong></p> <p style="text-align: justify;">La información de los sitios ha sido verificada y calificada por nuestro equipo y nuestros usuarios.</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contactanos</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <h3>Encuentra nuestras oficinas:</h3>
+              <br>
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Dirección:</h4>
+                <p>KM 22 Autopista Norte Vereda Verganzo sector Tibiflores, Tocancipa, Tocancipa.</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>fabiangz_94@hotmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Telefono:</h4>
+                <p>+57 310 6950754</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7949.742690258403!2d-73.94172958085082!3d4.96104770189748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e7cf64216890d38!2sHacienda%20Tocancip%C3%A1!5e0!3m2!1ses-419!2sco!4v1663127604922!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <h3>¿Cómo te podemos contactar?</h3>
+              <br>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Nombres Y Apellidos</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Asunto</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">¿Cómo te podemos ayudar?</label>
+                <textarea class="form-control" placeholder="¿Tienes alguna pregunta o quieres dejar algún comentario?" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado con éxito. Gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
